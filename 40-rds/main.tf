@@ -4,7 +4,7 @@ module "db" {
   identifier = "${var.project}-${var.environment}"
 
   engine            = "mysql"
-  engine_version    = "8.4.9"
+  engine_version    = "8.4."
   instance_class    = "db.m5.xlarge"
   allocated_storage = 20
 
