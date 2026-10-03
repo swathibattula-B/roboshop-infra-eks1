@@ -4,9 +4,9 @@ module "db" {
   identifier = "${var.project}-${var.environment}"
 
   engine            = "mysql"
-  engine_version    = "8.0"
+  engine_version    = "8.4.9"
   instance_class    = "db.m5.xlarge"
-  allocated_storage = 20
+  allocated_storage = 100
 
   db_name  = "cities"
   username = "root"
@@ -25,7 +25,7 @@ module "db" {
   family = "mysql8.0"
 
   # DB option group
-  major_engine_version = "8.4.9"
+  major_engine_version = "8.0"
 
   # Database Deletion Protection
   deletion_protection = false
