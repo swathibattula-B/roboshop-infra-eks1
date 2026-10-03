@@ -4,7 +4,7 @@ module "db" {
   identifier = "${var.project}-${var.environment}"
 
   engine            = "mysql"
-  engine_version    = "8.0"
+  engine_version    = "8.4.9"
   instance_class    = "db.t4g.micro"
   allocated_storage = 20
 
@@ -25,7 +25,7 @@ module "db" {
   family = "mysql8.0"
 
   # DB option group
-  major_engine_version = "8.0"
+  major_engine_version = "8.4"
 
   # Database Deletion Protection
   deletion_protection = false
